@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_home_black_24dp" android:id="@+id/action_inicio" android:title="@string/inicio"/>
+        <item android:icon="@drawable/advertencia" android:id="@+id/action_advertencia" android:title="Advertencia"/>
+        <item android:icon="@drawable/dolencias" android:id="@+id/action_dolencias" android:title="@string/dolen"/>
+        <item android:icon="@drawable/preparados" android:id="@+id/action_preparados" android:title="@string/prepa"/>
+        <item android:icon="@drawable/ic_favorite_black_24dp" android:id="@+id/action_favoritos" android:title="@string/favoritos"/>
+    </group>
+</menu>

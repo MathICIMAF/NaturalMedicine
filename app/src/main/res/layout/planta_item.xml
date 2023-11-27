@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/layout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="10dp" android:layout_marginRight="40dp" android:layout_marginBottom="5dp" ads:cardCornerRadius="8dp">
+        <ImageView android:id="@+id/image" android:background="@drawable/pasiflora" android:layout_width="match_parent" android:layout_height="190dp" android:scaleType="centerInside"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="5dp" android:layout_marginRight="40dp" android:layout_marginBottom="5dp" ads:cardCornerRadius="8dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+            <TextView android:textSize="17sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ajo" android:layout_weight="1" android:lineSpacingExtra="3dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray1" android:gravity="center" android:id="@+id/cientifico" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="Allium cepa L."/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

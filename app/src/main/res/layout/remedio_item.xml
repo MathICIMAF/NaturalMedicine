@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" app:cardCornerRadius="10dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/dolencia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="dolencia" android:fontFamily="serif"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

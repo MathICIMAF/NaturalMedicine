@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" ads:cardCornerRadius="3dp" ads:cardElevation="6dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="240dp">
+                <ViewFlipper android:id="@+id/v_flipper" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/valeriana" android:scaleType="centerCrop"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.95">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/ic_arrow_back_black_24dp" android:onClick="backButton"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/favoritos" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/ic_favorite_border_black_24dp"/>
+                </LinearLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentBottom="true">
+                    <ImageView android:background="@color/back3" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="@android:color/white" android:id="@+id/titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Apple" android:lineSpacingExtra="4.3sp" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.gms.ads.AdView android:layout_gravity="center" android:id="@+id/adView" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/banner3"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cient_w" android:fontFamily="serif"/>
+                <TextView android:textSize="12sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/cientifico" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:text="10-20"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/organo_w" android:fontFamily="serif"/>
+                <TextView android:textSize="12sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/organo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:text="10-20"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usos_w" android:fontFamily="serif"/>
+                <TextView android:textSize="12sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/uso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:text="10-20"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/modo_w" android:fontFamily="serif"/>
+                <TextView android:textSize="12sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/modo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:text="10-20"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/categorias_w" android:fontFamily="serif"/>
+                <TextView android:textSize="12sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/categoria" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:text="10-20"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.gms.ads.AdView android:layout_gravity="center" android:id="@+id/adView1" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/banner2"/>
+    </LinearLayout>
+</ScrollView>

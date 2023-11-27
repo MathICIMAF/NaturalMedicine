@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search_black_24dp" android:id="@+id/action_search" android:title="Search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_share_black_24dp" android:id="@+id/action_share" android:title="Compartir" app:showAsAction="always"/>
+    <item android:id="@+id/action_rateus" android:title="@string/rateus" app:showAsAction="never"/>
+</menu>
